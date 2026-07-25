@@ -1,7 +1,8 @@
-package ru.netology.service;
+package ru.netology.unit;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class BonusServiceTest {
 
@@ -11,6 +12,6 @@ public class BonusServiceTest {
 
         int actual = service.remain(1000);
 
-        Assert.assertEquals(actual, 0);
+        assertEquals(0, actual);
     }
 }
