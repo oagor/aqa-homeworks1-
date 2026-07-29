@@ -1,17 +1,17 @@
 package ru.netology.unit;
 
-import org.junit.Test;
+import ru.netology.service.BonusService;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BonusServiceTest {
 
     @Test
-    public void shouldReturnZeroWhenAmountIs1000() {
+    void shouldReturnZeroWhenAmountIs1000() {
         BonusService service = new BonusService();
 
         int actual = service.remain(1000);
 
         assertEquals(0, actual);
     }
-}
